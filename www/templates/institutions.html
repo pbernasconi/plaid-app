@@ -1,0 +1,24 @@
+<ion-view view-title="institutions">
+	<ion-header-bar class="bar bar-subheader item-input-inset">
+		<label class="item-input-wrapper">
+			<i class="icon ion-ios7-search placeholder-icon"></i>
+			<input class="search-input" type="search" placeholder="Search" ng-model="searchInput" ng-change="scrollTop()">
+		</label>
+		<button class="button button-clear" ng-click="clearInput()">
+			Cancel
+		</button>
+	</ion-header-bar>
+
+	<ion-content padding="false">
+
+		<div class="card" ng-repeat="item in institutions | filter:searchInput">
+			<div class="item item-divider-ios">
+				{{item.name}}
+			</div>
+			<div class="item">
+				{{item.products.join(', ')}}
+			</div>
+		</div>
+
+	</ion-content>
+</ion-view>

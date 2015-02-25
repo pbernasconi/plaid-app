@@ -1,0 +1,24 @@
+<ion-view view-title="connect-detail">
+	<ion-content padding="false">
+
+		<div class="card">
+			<div class="item item-divider-ios">
+				Accounts
+			</div>
+			<div class="item" ng-repeat="act in connection.accounts">
+				{{act.meta.name}}
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div class="item item-divider-ios">
+				Transactions
+			</div>
+			<div class="item" ng-repeat="txn in connection.transactions">
+				{{txn.name}}
+			</div>
+		</div>
+
+	</ion-content>
+</ion-view>

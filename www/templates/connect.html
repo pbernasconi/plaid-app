@@ -1,0 +1,48 @@
+<ion-view view-title="Connect">
+	<ion-content padding="true">
+
+		<div class="card">
+			<div class="item item-divider-ios">
+				Connect to Plaid
+			</div>
+			<div class="item">
+
+				<form ng-submit="connect(user)">
+					<label class="item item-input item-select">
+						<div class="input-label">
+							Bank Type
+						</div>
+						<select ng-model="user.type" ng-required="true">
+							<option ng-repeat="inst in institutions" ng-selected="inst.type == user.type" value="{{inst.type}}">{{inst.name}}</option>
+						</select>
+					</label>
+
+					<label class="item item-input item-floating-label">
+						<span class="input-label">Name</span>
+						<input type="text" placeholder="Name" ng-model="user.name">
+					</label>
+					<label class="item item-input item-floating-label">
+						<span class="input-label">Username</span>
+						<input type="text" placeholder="Username" ng-model="user.username" ng-required="true">
+					</label>
+
+					<label class="item item-input item-floating-label">
+						<span class="input-label">Email</span>
+						<input type="text" placeholder="Email" ng-model="user.email">
+					</label>
+					<label class="item item-input item-floating-label">
+						<span class="input-label">Password</span>
+						<input type="text" placeholder="Password" ng-model="user.password" ng-required="true">
+					</label>
+
+					<button type="submit" class="button button-block button-light">CONNECT</button>
+
+				</form>
+
+
+			</div>
+		</div>
+
+
+	</ion-content>
+</ion-view>
