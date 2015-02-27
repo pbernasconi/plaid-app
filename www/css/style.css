@@ -1,0 +1,13 @@
+ion-side-menu > ion-content,
+ion-side-menu > ion-content ion-list ion-item > a {
+  background-color: #224C51 !important;
+  color: #ffffff !important;
+}
+
+ion-side-menu > ion-content ion-list > .list {
+  padding-top: 45px;
+}
+
+ion-side-menu > ion-content ion-list ion-item.active > a{
+  color: #7AC0BB !important;
+}

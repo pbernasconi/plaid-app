@@ -1,8 +1,8 @@
 angular.module('starter.plaid.service', [])
 
   .value('API_URL', "https://tartan.plaid.com")
-  .value('plaid_client_id', "test_id")
-  .value('plaid_secret', "test_secret")
+  .value('plaid_client_id', "54cc173b89406c55606086fe")
+  .value('plaid_secret', "b02f0f292b8e26cb66047eb9e436f5")
 
   .factory('Plaid', function ($http, API_URL, plaid_client_id, plaid_secret) {
 
