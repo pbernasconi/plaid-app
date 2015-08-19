@@ -9,6 +9,7 @@ A mobile app to consume and demonstrate the [Plaid](https://plaid.com/) API. Bui
 $ sudo npm install -g cordova
 $ cordova platform add ios
 $ cordova build ios
+$ npm install -g ios-sim
 $ cordova emulate ios
 ```
 
